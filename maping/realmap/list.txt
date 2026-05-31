@@ -1,0 +1,7 @@
+
+	 	"Thomas":  35,
+	 	"jasmine": 54,
+	 	"Gerald":  54,
+	 	"Terdue":  98,
+	 	"django":  87,
+	 	"boptibo": 79,
