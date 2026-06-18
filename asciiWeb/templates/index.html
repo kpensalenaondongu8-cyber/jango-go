@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            color: rgb(95, 6, 6);
+        }
+        p {
+            color: rgba(87, 3, 3, 0.89);
+        }
+        h2 {
+            color: rgb(8, 8, 90)
+        }
+       
+    </style>
+    <title>ASCII Art Web</title>
+</head>
+<body>
+    <h1>ASCII-Art-Generator</h1>
+    <hr>
+
+    <form action="/ascii-art" method="POST">
+        <textarea name="text" placeholder="Enter your text"></textarea>
+
+        <p><em>Choose a banner:</em></p>
+        <input type="radio" name="banner" value="standard"> Standard
+        <br>
+        <input type="radio" name="banner" value="shadow"> Shadow
+        <br>
+        <input type="radio" name="banner" value="thinkertoy"> Thinkertoy
+    <button type="submit">Generate!</button>
+    </form>
+    {{ if .Result }}
+        <h2>Result:</h2>
+        <pre>{{ .Result }}</pre>
+    {{ end }}
+</body>
+</html>
