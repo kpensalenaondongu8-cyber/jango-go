@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Check</title>
+</head>
+<body>
+    <h1>Grade</h1>
+    <hr>
+    <form action="/" method="POST">
+        <input name="Name" placeholder="enter your name" value="{{.Name}}"></input>
+        <br>
+        <br>
+       <input name="Math" placeholder="enter maths scores" value="{{.Math}}"></input>
+       <br>
+       <br>
+       <input name="English" placeholder="enter english scores" value="{{.English}}"></input>
+       <br>
+       <br>
+       <input name="Science" placeholder="enter Science scores" value="{{.Science}}"></input> 
+      <br>      
+       <button type="reset">Reset</button>
+      <button type="submit">Submit!</button>
+
+       <h1>Result</h1>
+   <h2>Name:  {{.Name}}</h2>
+   <h2>Grade:  {{.Grade}}</h2>
+   <h2>Message: {{.Message}}</h2>
+    </form>
+   
+   
+</body>
+</html>
