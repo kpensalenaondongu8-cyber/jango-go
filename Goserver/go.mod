@@ -1,0 +1,3 @@
+module structEx5
+
+go 1.22.2
