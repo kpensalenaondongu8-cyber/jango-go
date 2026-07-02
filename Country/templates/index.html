@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <form action="/" method="Get">
+        <textarea name="latitude" placeholder="enter latitude"></textarea>
+        <textarea name="longitude" placeholder="enter longitude"></textarea>
+    <p>{{.CurrentWeather}}</p>
+    <br>
+    <p>{{.CurrentWeather.Temperature}}</p>
+    <br>
+    <p>{{.CurrentWeather.Windspeed}}</p>
+    <br>
+    <p>{{.CurrentWeather.Time}}</p>
+    <br>
+    <p>{{.CurrentWeather.Interval}}</p>
+    <br>
+    <p>{{.CurrentWeather.Weathercode}}</p>
+    <br>
+    <p>{{.CurrentWeather.Winddirection}}</p>  
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
