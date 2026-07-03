@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+</head>
+<body>
+    <form action="/" method="Get">
+        <p>{{.Avatar}}</p>
+        <p>Avatar</p>
+        <img src="{{.Avatar}}" width="150" alt="GitHub avatar">
+       <p>{{.Bio}}</p>
+       <hr>
+       <p>RepoCount</p>
+       <p>{{.RepoCount}}</p>
+       <hr>
+       <p>Followers</p>
+       <p>{{.Followers}}</p>
+       <hr>
+       <p>Following</p>
+       <p>{{.Following}}</p>
+        <hr>
+        <textarea name="username" placeholder="enter username"></textarea>
+        <br>
+       <button type="submit">Submit</button>
+    </form>   
+</body>
+</html>
