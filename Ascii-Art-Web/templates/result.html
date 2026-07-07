@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: papayawhip;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-Web-Result</title>
+</head>
+<body>
+    <h1> <em>Ascii-Web-Result</em></h1>
+    <hr>
+    <p>Click one of the link below to change font</p>
+<a href="/ascii-switch?text={{.Text}}&banner=standard">standard</a>
+<a href="/ascii-switch?text={{.Text}}&banner=shadow">shadow</a>
+<a href="/ascii-switch?text={{.Text}}&banner=thinkertoy">thinkertoy</a>
+    <h2>Result:</h2>
+ <a href="/">Back</a>   
+<pre>{{.Result}}</pre>
+</body>
+</html>
